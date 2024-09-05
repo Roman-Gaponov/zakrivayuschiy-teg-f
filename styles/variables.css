@@ -1,1 +1,39 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+    /* общие переменные */
+    
+    --main-font: 'Inter-Variable';
+    --accent-font: 'PressStart2P-Regular';
+
+    --title-weight: 500;
+    --text-weight: 300; 
+    
+    --bg-clr: rgb(255 255 255);
+    --text-color: rgb(0 0 0);
+    --accent-color: rgb(0 0 0 / 0.6);
+
+    /* Переменные для тёмной темы */
+  
+    /* --main-title-color: rgb(219 0 255);
+    --section-title-color: rgb(255 0 112);
+    --title-color: rgb(0 0 40);
+    --text-color: rgb(241 178 206);
+    --accent-color: rgb(255 0 112);
+    --shadow-color: rgb(255 0 112);
+    --decor-color: rgb(255 0 112);
+    --button-color: rgb(255 0 112);
+    --button-hover-color: rgb(255 0 112 / 0.4);
+  
+    --bg-clr: rgb(0 0 40);
+    --bg-img: url(../images/cover-image-dark.png);
+  
+    --main-title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    --section-title-font-size: 18px;
+    --title-font-size: 18px;
+    --text-font-size: 18px;
+    --button-font-size: 18px;
+  
+    --page-padding: 10px; */
+  }
+  
