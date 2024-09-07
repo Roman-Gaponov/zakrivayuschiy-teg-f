@@ -18,8 +18,8 @@
     --main-color: rgb(0 0 0);
     --accent-color: rgb(0 0 0 / 0.6);
 
-    --hdr-inln-sz: 100%;
-    --hdr-min-blck-sz: 327px
+    --con-inln-sz: 100%;
+    --hdr-min-blck-sz: 327px;
   
     /* --main-title-color: rgb(219 0 255);
     --section-title-color: rgb(255 0 112);

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+  
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,7 +17,9 @@
     <link rel="stylesheet" href="./styles/themes.css" />
     <script src="./scripts/set-theme.js"></script>
   </head>
+  
   <body class="page">
+
     <header class="header content-width">
       <div aria-hidden="true" class="header__logo">&lt;/HTML&gt;</div>
       <h1 class="header__title">закрывающий тег</h1>
@@ -52,6 +55,7 @@
         </ul>
       </nav>
     </header>
+
     <main class="main-content content-width">
       <ul class="card-list">
         <li class="card-list-item">
@@ -63,8 +67,9 @@
                                       И, возможно, подумать, как новые знания могут повлиять на ваше будущее.</p>
                 <p class="card__text">Место для ваших воспоминаний о начале обучения.</p>
               </div>
-              <div class="like-wrapper">
-                <button class="card__button">
+              <div class="card__like-wrapper">
+                <img class="like-icon" src="./svg/heart.svg" alt="иконка лайка">
+                <button class="card__like-button button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -162,11 +167,40 @@
         </li>
       </ul>
     </main>
+
     <footer class="footer content-width">
-      <button class="footer__button">
+      <button 
+        class="footer__button button"
+        type="button"
+        onclick="window['dialog-window'].showModal()"
+        aria-controls="dialog-window"
+      >
+        <svg
+          viewbox="0 0 40 40"
+          class="floppy-img"
+        >
+          <use href="./svg/floppy_optimized.svg#floppy_optimized">
+        </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
     </footer>
+
+    <dialog class="dialog" id="dialog-window">
+      <div class="dialog__text-wrapper">
+        <img src="./svg/floppy_optimized.svg" alt="иконка дискеты">
+        <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
+      </div>
+        <button 
+          class="dialog__button button"
+          type="button"
+          onclick="window['dialog-window'].close()"
+        >
+          ок
+        </button>
+    </dialog>
+
     <script src="./scripts/like.js"></script>
+
   </body>
+
 </html>
