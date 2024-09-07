@@ -5,15 +5,21 @@
     
     --main-font: 'Inter-Variable';
     --accent-font: 'PressStart2P-Regular';
+    
 
-    --title-weight: 500;
-    --text-weight: 300; 
+    /* Переменные для светлой темы */
+
+    --main-font-weight: 700;
+    --accent-font-weight: 400; 
+
+    /* --main-font-size: 42px; */
     
     --bg-clr: rgb(255 255 255);
-    --text-color: rgb(0 0 0);
+    --main-color: rgb(0 0 0);
     --accent-color: rgb(0 0 0 / 0.6);
 
-    /* Переменные для тёмной темы */
+    --hdr-inln-sz: 100%;
+    --hdr-min-blck-sz: 327px
   
     /* --main-title-color: rgb(219 0 255);
     --section-title-color: rgb(255 0 112);

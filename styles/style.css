@@ -18,23 +18,28 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font), sans-serif;
-  font-variation-settings: "wght" var(--title-weight), "wdth" 100, "opsz" 0;
-  color: var(--text-color);
+  font-variation-settings: "wght" var(--main-font-weight), "wdth" 100, "opsz" 0;
+  font-size: 18px;
+  color: var(--main-color);
   background-color: var(--bg-clr);
 
+  display: flex;
+  flex-direction: column;
+  /* gap: 30px; */
 
 
-  background-image:
-    repeating-linear-gradient(90deg, #d3d3d3 20px, transparent);
+
+  /* background-image:
+    repeating-linear-gradient(90deg, #d3d3d3 20px, transparent); */
     /* linear-gradient(transparent 60%, rgb(220 20 60/0.6) 60%), */
     /* linear-gradient(90deg, transparent 60%, rgb(220 20 60/0.6) 60%); */
   /* background-position: cover; */
   /* background-size: 2px; */
 
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; */
 
   /* background-image:
     linear-gradient(transparent 60%, rgb(220 20 60/0.6) 60%),
@@ -44,14 +49,166 @@
 }
 
 
+.content-width {
+  inline-size: var(--inln-sz);
+}
 
 
+.header {
+  color: var(--main-color);
+  font-family: var(--accent-font), monospace;
+  font-weight: normal;
+  margin-block-start: 100px;
+  min-block-size: var(--min-blck-sz);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
 
+.header__logo {
+  color: inherit;
+  font-size: clamp(3.0625rem, 1.9087rem + 4.9231vw, 4.0625rem);
+}
 
+.header__title {
+  color: inherit;
+  font-size: clamp(0.875rem, 0.226rem + 2.7692vw, 1.4375rem);
+}
 
+.theme-menu__button {
+  color: currentColor;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  line-height: 1;
+  cursor: pointer;
+}
 
+.theme-menu__button:disabled::before {
+  position: absolute;
+  content: "▶";
+  width: 16px;
+  height: 13px;
+  /* inset-block-end: 10px; */
+  inset-inline-start: 120px;
+}
 
+/* .header__theme-menu-button:hover {
+  border: 1px solid var(--button-hover-color);
+}
 
-@media (width <= 375px) {
-  
+.header__theme-menu-button:focus-visible {
+  border-block-end: 1px solid currentColor;
+  outline: none;
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+  outline: 1px solid currentColor;
+} */
+
+.theme-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main-content {
+  margin-block-start: 100px;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.card {
+  border: 2px solid currentColor;
+  color: var(--main-color);
+  font-family: var(--main-font), sans-serif;
+  display: flex;
+  flex-direction: column;
+  /* gap: 15px; */
+}
+
+.card__title {
+  margin: 4px 15px 6px 10px;
+  /* margin-inline-end: 15px; */
+  color: inherit;
+  font-size: inherit;
+}
+
+.card__image {
+  border-block-end: 2px solid currentColor;
+  block-size: 100%;
+}
+
+.card__text-wrapper {
+  margin: 25px; 
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+.card__text {
+  --main-font-weight: 400;
+  color:inherit;
+  font-size: inherit;
+}
+
+.card__text:first-of-type {
+  margin-block-end: 2px;
+}
+
+.like-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin: 0 25px 25px;
+}
+
+.card__button {
+  background-color: transparent;
+  border: 2px solid currentColor;
+  padding-inline: 35px;
+  padding-block-start: 10px;
+  padding-block-end: 6px;
+}
+
+.button__text {
+  color: currentColor;
+  font-family: var(--accent-font);
+  font-size: 14px;
+  /* line-height: 1; */
+}
+
+.footer {
+  /* color: var(--main-color); */
+  margin-block: 52px 100px;
+  margin-inline: auto;
+}
+
+.footer__button {
+  background-color: transparent;
+  border: 2px solid currentColor;
+  padding-inline: 20px;
+  padding-block: 12.5px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+@media (width > 375px) {
+  .content-width {
+    --inln-sz: clamp(375px 100% 700px);
+  }
+
+  .header {
+    --min-blck-sz: 368px;
+  }
 }
