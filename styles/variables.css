@@ -15,8 +15,13 @@
     /* --main-font-size: 42px; */
     
     --bg-clr: rgb(255 255 255);
+    --bg-img: repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
+              repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+              linear-gradient(to bottom, #e7e7e7, #e7e7e7 0.01%, #1a1a1a 100%);
+
     --main-color: rgb(0 0 0);
-    --accent-color: rgb(0 0 0 / 0.6);
+    --focus-color: rgb(0 0 0 / 0.6);
+    --stroke-color: rgb(255 255 255);
 
     --con-inln-sz: 100%;
     --hdr-min-blck-sz: 327px;
