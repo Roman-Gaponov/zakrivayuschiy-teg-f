@@ -3,16 +3,14 @@
 :root {
     /* общие переменные */
     
-    --main-font: 'Inter-Variable';
-    --accent-font: 'PressStart2P-Regular';
+    --main-font-family: 'Inter-Variable', sans-serif;
+    --accent-font-family: 'PressStart2P-Regular', monospace;
     
 
     /* Переменные для светлой темы */
 
     --main-font-weight: 700;
     --accent-font-weight: 400; 
-
-    /* --main-font-size: 42px; */
     
     --bg-clr: rgb(255 255 255);
     --bg-img: repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
@@ -20,31 +18,10 @@
               linear-gradient(to bottom, #e7e7e7, #e7e7e7 0.01%, #1a1a1a 100%);
 
     --main-color: rgb(0 0 0);
-    --focus-color: rgb(0 0 0 / 0.6);
-    --stroke-color: rgb(255 255 255);
+    --stroke-color: rgb(255 255 255 / 0.5);
+    --btn-txt-clr: rgb(255 255 255);
 
     --con-inln-sz: 100%;
     --hdr-min-blck-sz: 327px;
-  
-    /* --main-title-color: rgb(219 0 255);
-    --section-title-color: rgb(255 0 112);
-    --title-color: rgb(0 0 40);
-    --text-color: rgb(241 178 206);
-    --accent-color: rgb(255 0 112);
-    --shadow-color: rgb(255 0 112);
-    --decor-color: rgb(255 0 112);
-    --button-color: rgb(255 0 112);
-    --button-hover-color: rgb(255 0 112 / 0.4);
-  
-    --bg-clr: rgb(0 0 40);
-    --bg-img: url(../images/cover-image-dark.png);
-  
-    --main-title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    --section-title-font-size: 18px;
-    --title-font-size: 18px;
-    --text-font-size: 18px;
-    --button-font-size: 18px;
-  
-    --page-padding: 10px; */
   }
   

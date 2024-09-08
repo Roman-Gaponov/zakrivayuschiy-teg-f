@@ -22,7 +22,7 @@
 
     <header class="header content-width">
       <a class="header__logo-link" href="#0">
-        <p aria-hidden="true" class="header__logo">&lt;/HTML&gt;</p>
+        <span aria-hidden="true" class="header__logo">&lt;/HTML&gt;</span>
       </a>
       <h1 class="header__title">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
@@ -64,7 +64,7 @@
             <article class="card">
               <h2 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
               <div class="card__image-wrapper">
-                <span class="card__label label-stroke">&lt;/HTML&gt;</span>
+                <span class="card__watermark watermark-stroke">&lt;/HTML&gt;</span>
                 <img class="card__image" src="./images/image.jpg" alt="микроавтобус с диваном внутри на природе ночью">
               </div>
               <div class="card__text-wrapper">
@@ -73,13 +73,14 @@
                 <p class="card__text">Место для ваших воспоминаний о начале обучения.</p>
               </div>
               <div class="card__like-wrapper">
-                <!-- <img class="like-icon" src="./svg/heart.svg" alt="иконка лайка"> -->
-                <svg
-                viewbox="0 0 40 40"
-                class="like-icon"
-              >
-                <use href="./svg/heart_optimized.svg#heart_optimized">
-              </svg>
+                <button class="card__icon-button">
+                  <svg
+                  viewbox="0 0 39 36"
+                  class="like-icon"
+                  >
+                    <use href="./svg/heart_optimized.svg#heart_optimized">
+                  </svg>
+                </button>
                 <button class="card__like-button button">
                   <span class="button__text">Like</span>
                 </button>
@@ -89,7 +90,10 @@
         <li class="card-list-item">
             <article class="card">
               <h2 class="card__title">1 спринт: Я — чистый лист</h2>
-              <img class="card__image" src="./images/image.jpg" alt="микроавтобус с диваном внутри на природе ночью">
+              <div class="card__image-wrapper">
+                <span class="card__watermark watermark-stroke">&lt;/HTML&gt;</span>
+                <img class="card__image grayscale" src="./images/image.jpg" alt="микроавтобус с диваном внутри на природе ночью">
+              </div>
               <div class="card__text-wrapper">
                 <p class="card__text">На первых этапах мы работали со страхами и сомнениями, которые часто испытывают новички. 
                       Один из них — страх перед чистым листом. Это, конечно же, намного сложнее, чем боязнь куска бумаги. 
@@ -102,31 +106,66 @@
         <li class="card-list-item">
             <article class="card">              
               <h2 class="card__title">1 спринт: А если не получится?</h2>
-              <img class="card__image" src="./images/image.jpg" alt="микроавтобус с диваном внутри на природе ночью">
+              <div class="card__image-wrapper">
+                <span class="card__watermark watermark-stroke">&lt;CSS&gt;</span>
+                <img class="card__image saturate" src="./images/image.jpg" alt="микроавтобус с диваном внутри на природе ночью">
+              </div>
               <div class="card__text-wrapper">
                 <p class="card__text">Первый проект — позади! Но это всё ещё самое начало пути. 
                                       Радость могла быстро померкнуть и смениться ожиданием провала. 
                                       Или вы, наоборот, могли вдохновиться успехами и поверить в себя.</p>
                 <p class="card__text">Место для ваших воспоминаний об окончании первого спринта.</p>
               </div>
+              <div class="card__like-wrapper">
+                <button class="card__icon-button">
+                  <svg
+                  viewbox="0 0 39 36"
+                  class="like-icon"
+                  >
+                    <use href="./svg/heart_optimized.svg#heart_optimized">
+                  </svg>
+                </button>
+                <button class="card__like-button button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
             </article>              
         </li>
         <li class="card-list-item">
           <article class="card">              
             <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
-            <img class="card__image" src="./images/image.jpg" alt="микроавтобус с диваном внутри на природе ночью">
+            <div class="card__image-wrapper">
+              <span class="card__watermark watermark-stroke">&lt;desigions&gt;</span>
+              <img class="card__image hue-rotate" src="./images/image.jpg" alt="микроавтобус с диваном внутри на природе ночью">
+            </div>
             <div class="card__text-wrapper">
               <p class="card__text">На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы понять, как много ещё впереди. 
                                     Вы могли попытаться погнаться за идеалом и понять, что он недостижим.
                                     А, может, вы вовсе и не подвержены перфекционизму и вместо того, чтобы сделать идеально, старались просто сделать.</p>
               <p class="card__text">Место для ваших воспоминаний о начале второго спринта.</p>
             </div>
+            <div class="card__like-wrapper">
+              <button class="card__icon-button">
+                <svg
+                viewbox="0 0 39 36"
+                class="like-icon"
+                >
+                  <use href="./svg/heart_optimized.svg#heart_optimized">
+                </svg>
+              </button>
+              <button class="card__like-button button">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
           </article>              
         </li>
         <li class="card-list-item">
           <article class="card">              
             <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
-            <img class="card__image" src="./images/image.jpg" alt="микроавтобус с диваном внутри на природе ночью">
+            <div class="card__image-wrapper">
+              <span class="card__watermark watermark-stroke">care</span>
+              <img class="card__image invert" src="./images/image.jpg" alt="микроавтобус с диваном внутри на природе ночью">
+            </div>
             <div class="card__text-wrapper">
               <p class="card__text">Всё это время вы были не одиноки (хотя, возможно, иногда и чувствовали, что одни против целого мира). 
                                     Вас окружали одногруппники, команда сопровождения и просто близкие люди, 
@@ -134,24 +173,56 @@
                                     Осваивать что-то новое легче, когда рядом есть единомышленники, не правда ли?</p>
               <p class="card__text">Место для ваших воспоминаний об окончании второго спринта.</p>
             </div>
+            <div class="card__like-wrapper">
+              <button class="card__icon-button">
+                <svg
+                viewbox="0 0 39 36"
+                class="like-icon"
+                >
+                  <use href="./svg/heart_optimized.svg#heart_optimized">
+                </svg>
+              </button>
+              <button class="card__like-button button">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
           </article>              
         </li>
         <li class="card-list-item">
             <article class="card">              
               <h2 class="card__title">3 спринт: Обходные стратегии</h2>
-              <img class="card__image" src="./images/image.jpg" alt="микроавтобус с диваном внутри на природе ночью">
+              <div class="card__image-wrapper">
+                <span class="card__watermark watermark-stroke">&lt;lifes-style: none;&gt;</span>
+                <img class="card__image sepia" src="./images/image.jpg" alt="микроавтобус с диваном внутри на природе ночью">
+              </div>
               <div class="card__text-wrapper">
                 <p class="card__text">На этом курсе вы постоянно решали разные задачи. 
                                       В какой-то момент вам могло показаться, что решения просто иссякли. 
                                       Значит, пришло время посмотреть на задачу под другим углом.</p>
                 <p class="card__text">Место для ваших воспоминаний о начале третьего спринта.</p>
               </div>
+              <div class="card__like-wrapper">
+                <button class="card__icon-button">
+                  <svg
+                  viewbox="0 0 39 36"
+                  class="like-icon"
+                  >
+                    <use href="./svg/heart_optimized.svg#heart_optimized">
+                  </svg>
+                </button>
+                <button class="card__like-button button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
             </article>              
           </li>
         <li class="card-list-item">
           <article class="card">              
             <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
-            <img class="card__image" src="./images/image.jpg" alt="микроавтобус с диваном внутри на природе ночью">
+            <div class="card__image-wrapper">
+              <span class="card__watermark watermark-stroke">&lt;support&gt;</span>
+              <img class="card__image blur" src="./images/image.jpg" alt="микроавтобус с диваном внутри на природе ночью">
+            </div>
             <div class="card__text-wrapper">
               <p class="card__text">Во время учёбы часто возникает чувство, когда не знаешь, за что хвататься. 
                                     Вроде и проектную пора сдавать, и задачи хочется порешать, 
@@ -159,12 +230,28 @@
                                     В такие моменты очень нужна концентрация. Вспомните, откуда вы её черпали.</p>
               <p class="card__text">Место для ваших воспоминаний об окончании третьего спринта.</p>
             </div>
+            <div class="card__like-wrapper">
+              <button class="card__icon-button">
+                <svg
+                viewbox="0 0 39 36"
+                class="like-icon"
+                >
+                  <use href="./svg/heart_optimized.svg#heart_optimized">
+                </svg>
+              </button>
+              <button class="card__like-button button">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
           </article>              
         </li>
         <li class="card-list-item">
           <article class="card">              
             <h2 class="card__title">«Сейчас я здесь»</h2>
-            <img class="card__image" src="./images/image.jpg" alt="микроавтобус с диваном внутри на природе ночью">
+            <div class="card__image-wrapper">
+              <span class="card__watermark watermark-stroke">&lt;experience&gt;</span>
+              <img class="card__image multiple-filter" src="./images/image.jpg" alt="микроавтобус с диваном внутри на природе ночью">
+            </div>
             <div class="card__text-wrapper">
               <p class="card__text">Сейчас вы уже очень много знаете о вёрстке. 
                                     Но это только начало. Во-первых, впереди ещё много материала про «красотищу». 
@@ -173,6 +260,19 @@
                                     Познать его полностью не получится, но это тот случай, когда важен сам процесс познания. 
                                     Ведь часто путь — и есть результат.</p>
               <p class="card__text">Место, чтобы остановиться, подумать и написать, что вы чувствуете в этой точке пути.</p>
+            </div>
+            <div class="card__like-wrapper">
+              <button class="card__icon-button">
+                <svg
+                viewbox="0 0 39 36"
+                class="like-icon"
+                >
+                  <use href="./svg/heart_optimized.svg#heart_optimized">
+                </svg>
+              </button>
+              <button class="card__like-button button">
+                <span class="button__text">Like</span>
+              </button>
             </div>
           </article>              
         </li>
@@ -192,7 +292,7 @@
         >
           <use href="./svg/floppy_optimized.svg#floppy_optimized">
         </svg>
-        <p class="button__text">Сохранить на память</p>
+        <span class="button__text">Сохранить на память</span>
       </button>
     </footer>
 
@@ -211,7 +311,7 @@
           type="button"
           onclick="window['dialog-window'].close()"
         >
-          ок
+          <span class="button__text">ок</span>
         </button>
     </dialog>
 
