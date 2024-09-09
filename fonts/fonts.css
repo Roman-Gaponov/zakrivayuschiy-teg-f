@@ -6,8 +6,8 @@
   src: local("Inter-Variable"),
     url("../fonts/Inter-Variable.woff2") format("woff2 supports variations"),
     url("../fonts/Roboto-Flex-Variable.woff2") format("woff2-variations");
-  font-weight: 400 700;
-  font-stretch: 100 100;
+  font-weight: 400 465 700 765;
+  font-stretch: 100;
 }
 
 @font-face {
