@@ -7,6 +7,7 @@
 
 :root.theme-light {
   --main-font-weight: 700;
+  --text-font-weight: 400;
   --accent-font-weight: 400;
 
   --bg-clr: rgb(255 255 255);
@@ -17,11 +18,14 @@
   --main-color: rgb(0 0 0);
   --stroke-color: rgb(255 255 255 / 0.5);
   --btn-txt-clr: rgb(255 255 255);
+
+  --liked-heart-clr: rgb(255 0 0);
 }
 
 :root.theme-dark {
   --main-font-weight: 785;
-  --accent-font-weight: 465;
+  --text-font-weight: 465;
+  --accent-font-weight: 400;
 
   --bg-clr: rgb(0 0 0);
   --bg-img: repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px),
@@ -31,12 +35,15 @@
   --main-color: rgb(0 204 20);
   --stroke-color: rgb(0 0 0 / 0.5);
   --btn-txt-clr: rgb(0 204 20);
+
+  --liked-heart-clr: rgb(255 0 0);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --main-font-weight: 785;
-    --accent-font-weight: 465;
+    --text-font-weight: 465;
+    --accent-font-weight: 400;
 
     --bg-clr: rgb(0 0 0);
     --bg-img: repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px),
@@ -46,5 +53,7 @@
     --main-color: rgb(0 204 20);
     --stroke-color: rgb(0 0 0 / 0.5);
     --btn-txt-clr: rgb(0 204 20);
+
+    --liked-heart-clr: rgb(255 0 0);
   }
 }

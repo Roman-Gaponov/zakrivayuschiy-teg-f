@@ -1,27 +1,28 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
 :root {
-    /* общие переменные */
-    
-    --main-font-family: 'Inter-Variable', sans-serif;
-    --accent-font-family: 'PressStart2P-Regular', monospace;
-    
+  /* общие переменные */
 
-    /* Переменные для светлой темы */
+  --main-font-family: "Inter-Variable", sans-serif;
+  --accent-font-family: "PressStart2P-Regular", monospace;
 
-    --main-font-weight: 700;
-    --accent-font-weight: 400; 
-    
-    --bg-clr: rgb(255 255 255);
-    --bg-img: repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
-              repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
-              linear-gradient(to bottom, #e7e7e7, #e7e7e7 0.01%, #1a1a1a 100%);
+  --con-inln-sz: 100%;
+  --hdr-min-blck-sz: 327px;
 
-    --main-color: rgb(0 0 0);
-    --stroke-color: rgb(255 255 255 / 0.5);
-    --btn-txt-clr: rgb(255 255 255);
+  /* Переменные для светлой темы */
 
-    --con-inln-sz: 100%;
-    --hdr-min-blck-sz: 327px;
-  }
-  
+  --main-font-weight: 700;
+  --text-font-weight: 400;
+  --accent-font-weight: 400;
+
+  --bg-clr: rgb(255 255 255);
+  --bg-img: repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
+            repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+            linear-gradient(to bottom, #e7e7e7, #e7e7e7 0.01%, #1a1a1a 100%);
+
+  --main-color: rgb(0 0 0);
+  --stroke-color: rgb(255 255 255 / 0.5);
+  --btn-txt-clr: rgb(255 255 255);
+
+  --liked-heart-clr: rgb(255 0 0);
+}
