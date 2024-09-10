@@ -19,7 +19,12 @@
   --stroke-color: rgb(255 255 255 / 0.5);
   --btn-txt-clr: rgb(255 255 255);
 
+  --animate-btn-txt-clr: rgb(255 255 255);
+  --a-time-btn-txt-clr: 0.3s;
+
   --liked-heart-clr: rgb(255 0 0);
+
+  --backdrop-color: rgb(0 0 0 / 0.75);
 }
 
 :root.theme-dark {
@@ -36,7 +41,12 @@
   --stroke-color: rgb(0 0 0 / 0.5);
   --btn-txt-clr: rgb(0 204 20);
 
+  --animate-btn-txt-clr: rgb(0 0 0);
+  --a-time-btn-txt-clr: 1s;
+
   --liked-heart-clr: rgb(255 0 0);
+
+  --backdrop-color: rgb(0 0 0 / 0.75);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -53,7 +63,12 @@
     --main-color: rgb(0 204 20);
     --stroke-color: rgb(0 0 0 / 0.5);
     --btn-txt-clr: rgb(0 204 20);
-
+    
+    --animate-btn-txt-clr: rgb(0 0 0);
+    --a-time-btn-txt-clr: 1s;
+    
     --liked-heart-clr: rgb(255 0 0);
+
+    --backdrop-color: rgb(0 0 0 / 0.75);
   }
 }

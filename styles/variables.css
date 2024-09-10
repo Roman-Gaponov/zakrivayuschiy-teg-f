@@ -24,5 +24,10 @@
   --stroke-color: rgb(255 255 255 / 0.5);
   --btn-txt-clr: rgb(255 255 255);
 
+  --animate-btn-txt-clr: rgb(255 255 255);
+  --a-time-btn-txt-clr: 0.3s;
+
   --liked-heart-clr: rgb(255 0 0);
+
+  --backdrop-color: rgb(0 0 0 / 0.75);
 }

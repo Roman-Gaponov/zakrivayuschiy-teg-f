@@ -21,7 +21,7 @@
   <body class="page">
 
     <header class="header content-width">
-      <a class="header__logo-link" href="#0">
+      <a class="header__logo-link">
         <span aria-hidden="true" class="header__logo">&lt;/HTML&gt;</span>
       </a>
       <h1 class="header__title">закрывающий тег</h1>
@@ -263,7 +263,7 @@
               <span class="card__watermark watermark-stroke">care</span>
               <img class="card__image invert" src="./images/image.jpg" alt="микроавтобус с диваном внутри на природе ночью">
             </div>
-            <div class="card__text-wrapper">
+            <div class="card__text-wrapper who-nearby-text">
               <p class="card__text">Всё это время вы были не одиноки (хотя, возможно, иногда и чувствовали, что одни против целого мира). 
                                     Вас окружали одногруппники, команда сопровождения и просто близкие люди, 
                                     которым можно пожаловаться, если очередной макет просто так не поддавался. 
@@ -412,7 +412,7 @@
               <span class="card__watermark watermark-stroke">&lt;experience&gt;</span>
               <img class="card__image multiple-filter" src="./images/image.jpg" alt="микроавтобус с диваном внутри на природе ночью">
             </div>
-            <div class="card__text-wrapper">
+            <div class="card__text-wrapper here-now-text">
               <p class="card__text">Сейчас вы уже очень много знаете о вёрстке. 
                                     Но это только начало. Во-первых, впереди ещё много материала про «красотищу». 
                                     Во-вторых, с окончанием курса учёба не заканчивается. 
@@ -458,25 +458,26 @@
           </article>              
         </li>
       </ul>
-    </main>
 
-    <footer class="footer content-width">
-      <button 
-        class="footer__button button"
-        type="button"
-        onclick="window['dialog-window'].showModal()"
-        aria-controls="dialog-window"
-      >
-        <svg
-          viewbox="0 0 40 40"
-          class="footer__floppy-img"
-          aria-hidden="true"
+      <div class="save-button__wrapper content-width">
+        <button 
+          class="save-button button"
+          type="button"
+          onclick="window['dialog-window'].showModal()"
+          aria-controls="dialog-window"
         >
-          <use href="./svg/floppy_optimized.svg#floppy_optimized" />
-        </svg>
-        <span class="button__text">Сохранить на память</span>
-      </button>
-    </footer>
+          <svg
+            viewbox="0 0 40 40"
+            class="save-button__floppy-img"
+            aria-hidden="true"
+          >
+            <use href="./svg/floppy_optimized.svg#floppy_optimized" />
+          </svg>
+          <span class="button__text">Сохранить на память</span>
+        </button>
+      </div>
+
+    </main>
 
     <dialog class="dialog" id="dialog-window">
       <div class="dialog__text-wrapper">
@@ -489,13 +490,14 @@
         </svg>
         <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
       </div>
+      <form class="dialog__form" method="dialog">
         <button 
           class="dialog__button button"
-          type="button"
-          onclick="window['dialog-window'].close()"
+          type="submit"
         >
           <span class="button__text">ок</span>
         </button>
+      </form>
     </dialog>
 
     <script src="./scripts/like.js"></script>

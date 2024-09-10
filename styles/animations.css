@@ -13,6 +13,69 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 
+.like-icon.is-liked .heart_core {
+  fill: var(--liked-heart-clr);
+  transition: fill 0.3s;
+}
+
+.like-icon.is-liked .heart_main-body {
+  fill: var(--liked-heart-clr);
+  transition: fill 0.3s 0.05s;
+}
+
+.like-icon.is-liked .heart_contour {
+  fill: var(--liked-heart-clr);
+  transition: fill 0.3s 0.06s;
+}
+
+.like-icon.is-liked .heart {
+  transform-origin: center;
+  animation: scale 0.3s ease-in alternate 0.1s;
+}
+
+.like-icon.is-liked .heart_sparks {
+  will-change: opacity;
+  animation: flash 0.3s ease-in alternate 0.3s;
+}
+    
+.like-icon:not(.is-liked) .heart_core {
+  fill: transparent;
+  transition: fill 0.3s ease-in;
+}
+
+.like-icon:not(.is-liked) .heart_main-body {
+  fill: transparent;
+  transition: fill 0.3s ease-in;
+}
+
+.like-icon:not(.is-liked):hover .heart_core {
+  fill: var(--main-color);
+}
+
+.like-icon:not(.is-liked):hover .heart_main-body {
+  fill: var(--main-color);
+}
+
+.like-icon:not(.is-liked):active .heart_core {
+  fill: var(--liked-heart-clr);
+}
+
+.like-icon:not(.is-liked):active .heart_main-body {
+  fill: var(--liked-heart-clr);
+}
+
+.like-icon:not(.is-liked):active .heart_contour {
+  fill: var(--liked-heart-clr);
+}
+
+.button:hover .button__text {
+  animation: txt-clr-animate var(--a-time-btn-txt-clr) ease;
+}
+
+.button:hover .save-button__floppy-img {
+  animation: floppy-clr-animate var(--a-time-btn-txt-clr) ease;
+}
+
 @keyframes row {
   from {
     translate: 0 0;
@@ -47,9 +110,9 @@
   }
 }
 
-@keyframes clr-diff {
+@keyframes txt-clr-animate {
   from {
-    color: var(--btn-txt-clr);
+    color: var(--animate-btn-txt-clr);
   }
 
   to {
@@ -57,9 +120,9 @@
   }
 }
 
-@keyframes floppy-clr-diff {
+@keyframes floppy-clr-animate {
   from {
-    fill: var(--btn-txt-clr);
+    fill: var(--animate-btn-txt-clr);
   }
 
   to {
